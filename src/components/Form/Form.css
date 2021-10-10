@@ -1,0 +1,228 @@
+.signup-all {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+form {
+  text-align: center;  
+}
+
+input, select {
+  font-size: 15px;
+  color: #5C64EB;
+}
+
+.h1, h2 {
+  margin-top: 20px;
+}
+
+.h1, h2 {
+  padding: 0;
+  font-size: 20px;
+  color: #5C64EB;
+}
+
+.input {
+  margin-top: 20px;
+}
+
+.form-cadastro {
+  width: 364px;
+  height: 630px;
+  background: rgba( 153, 209, 200, 0.4);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+  backdrop-filter: blur( 6px);
+  -webkit-backdrop-filter: blur( 6px);
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.name-cadastro, .rua-cadastro, .bairro-cadastro, .email-cadastro, .email-login, .senha-login {
+  width: 318px;
+  height: 30px;
+  background: rgba( 133, 138, 227, 0.4);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+  backdrop-filter: blur( 6px);
+  -webkit-backdrop-filter: blur( 6px);
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.half {
+  width: 149px;
+  height: 30px;
+  background: rgba( 133, 138, 227, 0.4);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+  backdrop-filter: blur( 6px);
+  -webkit-backdrop-filter: blur( 6px);
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.num-cadastro {
+  width: 82px;
+  height: 30px;
+  background: rgba( 133, 138, 227, 0.4);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+  backdrop-filter: blur( 6px);
+  -webkit-backdrop-filter: blur( 6px);
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.comp-cadastro {
+  width: 218px;
+  height: 30px;
+  background: rgba( 133, 138, 227, 0.4);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+  backdrop-filter: blur( 6px);
+  -webkit-backdrop-filter: blur( 6px);
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.inline {
+  display: inline-flex;
+  align-items: center;
+}
+
+.sec {
+  margin-left: 20px;
+}
+
+.btn-cadastro, .btn-login {
+  font-size: 20px;
+  font-weight: 700;
+  color: #5C64EB;
+  margin-top: 20px;
+  width: 220px;
+  height: 45px;
+  background: rgba( 92, 100, 235, 0.4);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+  backdrop-filter: blur( 6px);
+  -webkit-backdrop-filter: blur( 6px);
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18);
+  cursor: pointer;
+}
+
+
+
+
+
+.form-login {
+  width: 364px;
+  height: 400px;
+  background: rgba( 153, 209, 200, 0.4);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+  backdrop-filter: blur( 6px);
+  -webkit-backdrop-filter: blur( 6px);
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.fa-user-circle {
+  color:#5C64EB;
+  font-size: 100px;
+  padding-top: 25px;
+}
+
+
+.toggle {
+  width: 182px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #5C64EB;
+  margin-top: 20px;
+  
+  height: 45px;
+  background: rgba( 92, 100, 235, 0.4);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+  backdrop-filter: blur( 6px);
+  -webkit-backdrop-filter: blur( 6px);
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18);
+  cursor: pointer;
+}
+
+.toggle-center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+
+
+/* side by side vs toggle */
+@media only screen and (min-width: 800px) and (max-width: 960px) {
+  .form-not-collapse {
+    display: none;
+  }
+
+  .form-cadastro, .form-login {
+    width: 600px;
+  }
+
+  .name-cadastro, .rua-cadastro, .bairro-cadastro, .email-cadastro, .email-login, .senha-login {
+    width: 554px;
+  }
+
+  .half {
+    width: 267px;
+  }
+
+  .num-cadastro {
+    width: 120px;
+  }
+
+  .comp-cadastro {
+    width: 414px;
+  }
+
+}
+
+@media only screen and (max-width: 960px) {
+    .form-not-collapse {
+      display: none;
+    }
+}
+
+@media only screen and (min-width: 961px) {
+  .form-collapse {
+    display: none;
+  }
+
+  .form-not-collapse {
+    margin-top: 100px;
+    position: relative;
+    display: flex;    
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .form-cadastro, .form-login {
+    width: 450px;
+  }
+
+  .name-cadastro, .rua-cadastro, .bairro-cadastro, .email-cadastro, .email-login, .senha-login {
+    width: 404px;
+  }
+
+  .half {
+    width: 192px;
+  }
+
+  .num-cadastro {
+    width: 120px;
+  }
+
+  .comp-cadastro {
+    width: 264px;
+  }
+
+}
+

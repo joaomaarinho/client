@@ -1,0 +1,28 @@
+.homeLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.homeLinks-btn {  
+  margin-top: 20px;  
+}
+
+Button {
+  width: 300px;
+  height: 75px;
+}
+
+@media only screen and (min-width: 961px) {
+  .homeLinks {
+    flex-direction: row;
+    margin-left: 40px;
+  }
+
+  .homeLinks-btn {  
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

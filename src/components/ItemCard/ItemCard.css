@@ -1,0 +1,155 @@
+
+
+.container {
+    margin-top: 20px;
+    width: 364px;
+    height: 250px;
+    border-radius: 5px;
+    background: rgba( 153, 209, 200, 0.5);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 3px);
+    -webkit-backdrop-filter: blur( 3px);
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    color: #5C64EB;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    width: 331px;
+    height: 20px;
+    background: rgba( 133, 138, 227, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.item-name {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.imaaage {
+    width: 184px;
+    height: 184px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.qtd {
+    text-align: center;
+    width: 132px;
+    height: 20px;
+    background: rgba( 133, 138, 227, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.price {
+    width: 132px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.available {
+    font-size: 10px;
+    text-align: center;
+    width: 132px;
+    height: 20px;
+    background: rgba( 133, 138, 227, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.add, .rem {
+    width: 30px;
+    height: 20px;
+    background: rgba( 255, 183, 195, 0.5);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 3.5px);
+    -webkit-backdrop-filter: blur( 3.5px);
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    cursor: pointer;
+    color: #5C64EB;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.add-remove {
+    width: 50px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    color: #5C64EB;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.select {
+    width: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add-cart {
+    width: 132px;
+    height: 48px;
+    background: rgba( 255, 183, 195, 0.5);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 3.5px);
+    -webkit-backdrop-filter: blur( 3.5px);
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    cursor: pointer;
+    color: #5C64EB;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.sec-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sec-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.all-elements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+

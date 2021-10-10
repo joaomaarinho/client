@@ -1,0 +1,10 @@
+.cardapio {
+  width: 100%;
+  max-width: 900px;  
+}
+
+.cardapio-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

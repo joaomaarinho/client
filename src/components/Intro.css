@@ -1,0 +1,11 @@
+h3 {
+    padding: 30px 80px;
+    display: flex;
+    justify-content: left;
+    color: #5C64EB;
+    align-items: center;
+}
+
+h2 {
+    padding: 25px 0;    
+}

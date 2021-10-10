@@ -1,0 +1,15 @@
+.slogan {
+    width: 100%;
+    height: 135px;
+    background-color: #858AE3;
+    opacity: 0.8;
+    background-image:  linear-gradient(135deg, #99D1C8 25%, transparent 25%), linear-gradient(225deg, #99D1C8 25%, transparent 25%), linear-gradient(45deg, #99D1C8 25%, transparent 25%), linear-gradient(315deg, #99D1C8 25%, #858AE3 25%);
+    background-position:  17px 0, 17px 0, 0 0, 0 0;
+    background-size: 34px 34px;
+    background-repeat: repeat;
+    padding-top: 40px;    
+    padding-left: 50px;
+    font-weight: 700;
+    color: #2630E4;
+    font-size: 25px;
+}
