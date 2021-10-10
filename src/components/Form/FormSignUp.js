@@ -6,6 +6,8 @@ import axios from "axios";
 
 function FormSignUp() {
 
+  const [mensagem, setMensagem] = useState("")
+  const [isAlerta, setIsAlerta] = useState(false)
   const [emailCadastro, setEmailCadastro] = useState("")
   const [senhaCadastro, setSenhaCadastro] = useState("")
   const [senhaCopia, setSenhaCopia] = useState("")
@@ -80,14 +82,15 @@ function FormSignUp() {
       await api.post("usuarios", request)
         .then(r => {
           console.log(r.data)
+          alert(r.data.message)
         })
         .catch(e => {
-          console.log(e)
-          // alert("Erro ao cadastrar usuário, verifique os campos e tente novamente")
+          console.log(e);
+          alert(e.response.data.message);
         })
     } else {
       console.log("Preencha todos os campos")
-      // alert("Preencha todos os campos")
+      alert("Preencha todos os campos")
     }
   }
 
@@ -144,9 +147,15 @@ function FormSignUp() {
   }
 
   const compararSenha = () => {
-    if (senhaCopia !== senhaCadastro && senhaCadastro === "" && senhaCopia === "") {
+    if (senhaCopia !== senhaCadastro && senhaCopia !== "" && senhaCadastro !== "") {
 
-      alert("As senhas não são iguais")
+      setMensagem("As senhas não são iguais");
+      setIsAlerta(true);
+
+    }
+    else {
+
+      setIsAlerta(false);
 
     }
   }
@@ -220,6 +229,8 @@ function FormSignUp() {
           <input className="half" type="password" placeholder="senha" value={senhaCopia} onChange={e => setSenhaCopia(e.target.value)} />
 
         </div>
+
+        {isAlerta && <div className="msg-fixed">{mensagem}</div>}
 
         <button className="btn-cadastro" type="button" onClick={() => cadastrar()}>CADASTRAR</button>
       </form>
