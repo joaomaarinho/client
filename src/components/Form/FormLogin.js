@@ -33,7 +33,7 @@ function FormLogin() {
     <div className="signup-all">
 
       <form className="form-login">
-        <i class="fas fa-user-circle"></i>
+        <i className="fas fa-user-circle"></i>
         <div className="input">
         <input className="email-login" placeholder="email" value={email} onChange={e => setEmail(e.target.value)} />
         </div>

@@ -1,0 +1,141 @@
+.contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 700px;
+}
+
+.contato-input {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 364px;
+  height: 494px;
+  background: rgba( 153, 209, 200, 0.4);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+  backdrop-filter: blur( 5.5px);
+  -webkit-backdrop-filter: blur( 5.5px);
+  border-radius: 5px;
+  border: 1px solid rgba( 255, 255, 255, 0.18);
+  padding-top: 35px;
+  padding-bottom: 35px;
+  justify-content: space-between;
+}
+
+input {
+  height: 30px;
+  width: 318px;
+  background: rgba( 133, 138, 227, 0.4);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+  backdrop-filter: blur( 5.5px);
+  -webkit-backdrop-filter: blur( 5.5px);
+  border-radius: 5px;
+  border: 1px solid rgba( 255, 255, 255, 0.18);
+  color: #5C64EB;
+  font-weight: bolder;
+  padding-left: 10px;
+}
+
+.contato-input-mensagem {
+  height: 258px;
+}
+
+.contato-titulo {
+  width: 364px;
+  height: 40px;
+  background: rgba( 133, 138, 227, 0.4);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+  backdrop-filter: blur( 5.5px);
+  -webkit-backdrop-filter: blur( 5.5px);
+  border-radius: 5px;
+  border: 1px solid rgba( 255, 255, 255, 0.18);
+  color: #5C64EB;
+  font-size: 15px;
+  font-weight: bolder;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contato-botao {
+  cursor: pointer;
+  width: 175px;
+  height: 45px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #5C64EB;
+  background: rgba( 133, 138, 227, 0.4);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+  backdrop-filter: blur( 5.5px);
+  -webkit-backdrop-filter: blur( 5.5px);
+  border-radius: 5px;
+  border: 1px solid rgba( 255, 255, 255, 0.18);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.contato-botao:hover {
+  background: rgba( 255, 183, 195, 0.3);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+  backdrop-filter: blur( 4px);
+  -webkit-backdrop-filter: blur( 4px);
+  border-radius: 5px;
+  border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.whatsapp {
+  margin-bottom: 25px;
+}
+
+.whatsapp:hover {
+  color: rgba( 153, 209, 200, 0.4);
+}
+
+.carregando {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 180px;
+}
+
+.contato-mensagem-enviando {
+  padding-top: 50px;
+  font-weight: bolder;
+  color: #5C64EB;
+  font-size: 20px;
+}
+
+.contato-icone {
+  width: 364px;
+  height: 40px;
+  background: rgba( 133, 138, 227, 0.4);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+  backdrop-filter: blur( 5.5px);
+  -webkit-backdrop-filter: blur( 5.5px);
+  border-radius: 5px;
+  border: 1px solid rgba( 255, 255, 255, 0.18);
+  color: #5C64EB;
+  font-size: 15px;
+  font-weight: bolder;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 767px) {
+  .contato-titulo, .contato-input {
+    width: 500px;
+  }
+  input {
+    width: 454px;
+  }
+  .contato-input-mensagem {
+    height: 200px;
+  }
+}

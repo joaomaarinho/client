@@ -1,6 +1,4 @@
-import { Button } from "../components/Button";
 import ItemCard from '../components/ItemCard/ItemCard';
-import Slogan from "../components/Slogan";
 import api from "../services/api";
 import React, { useEffect, useState } from 'react';
 
@@ -8,6 +6,8 @@ import React, { useEffect, useState } from 'react';
 function Entrega() {
 
 	const [produtos, setProdutos] = useState([]);
+	const [visible, setVisible] = useState(false)
+	const [mensagem, setMensagem] = useState("")
 
 	useEffect(() => {
 		api("produtos")
@@ -17,11 +17,23 @@ function Entrega() {
 			})
 	}, [])
 
+	useEffect(() => {
+		if (visible) {
+			setTimeout(() => {
+				setVisible(false);
+			}, 2000);
+		}
+	}, [visible])
+
 	return (
 		<div className="all-elements">
 			{produtos.map(item =>
-				<ItemCard item={item} />
+				item.produtoEncerrado !== true && item.produtoAtivo &&
+				<ItemCard item={item} setMensagem={setMensagem} setVisible={setVisible} />
 			)}
+			{visible &&
+				<div className="snackbar">{mensagem}</div>
+			}
 		</div>
 	)
 
