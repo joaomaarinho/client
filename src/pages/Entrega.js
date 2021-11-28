@@ -28,7 +28,7 @@ function Entrega() {
 	return (
 		<div className="all-elements">
 			{produtos.map(item =>
-				item.produtoEncerrado !== true && item.produtoAtivo &&
+				item.produtoAtivo && item.quantidade > 0 &&
 				<ItemCard item={item} setMensagem={setMensagem} setVisible={setVisible} />
 			)}
 			{visible &&

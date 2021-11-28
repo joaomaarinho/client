@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;  
   font-family: 'Nunito', sans-serif;
-  
 }
 
 body {
@@ -56,4 +55,5 @@ body {
   transition-duration: 1s;
   transform: scale(1.08);
 }
+
 

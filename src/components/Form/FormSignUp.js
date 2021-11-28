@@ -85,7 +85,7 @@ function FormSignUp() {
           alert(r.data.message)
         })
         .catch(e => {
-          console.log(e);
+          console.log(e.response);
           alert(e.response.data.message);
         })
     } else {

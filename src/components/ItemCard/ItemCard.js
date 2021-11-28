@@ -11,7 +11,7 @@ function ItemCard(props) {
 
     const adicionarAoCarrinho = () => {
         let prodCarrinho = [];
-        prodCarrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+        prodCarrinho = JSON.parse(sessionStorage.getItem("carrinho")) || [];
         let idEncontrado = false;
         prodCarrinho.forEach(prod => {
             if (prod.id === props.item.id) {
@@ -20,11 +20,11 @@ function ItemCard(props) {
             }
         })
         if (idEncontrado === false) {
-            prodCarrinho.push({ id: props.item.id, quantidade: qtdItem, nome: props.item.nome, valorUnitario: props.item.preco, quantidadeTotal: props.item.quantidade })
+            prodCarrinho.push({ id: props.item.id, quantidade: qtdItem, nome: props.item.nome, valorUnitario: props.item.preco, quantidadeTotal: props.item.quantidade, imagem: props.item.imagem })
         }
-        localStorage.setItem("carrinho", JSON.stringify(prodCarrinho));
+        sessionStorage.setItem("carrinho", JSON.stringify(prodCarrinho));
 
-        let lista = JSON.parse(localStorage.getItem("carrinho"));
+        let lista = JSON.parse(sessionStorage.getItem("carrinho"));
         console.log(lista)
         props.setMensagem("Produto adicionado ao carrinho")
         props.setVisible(true)

@@ -21,10 +21,11 @@ function FormLogin() {
       .then(res => {
         console.log(res)
         localStorage.setItem("token", res.data.token)
-        history.push('/')
+        // history.push('/')
+        window.location.href = "/"
       })
       .catch(e => {
-        console.log(e.response.data.message)
+        console.log(e.response.data)
         alert(e.response.data.message)
       })
   }
@@ -35,14 +36,14 @@ function FormLogin() {
       <form className="form-login">
         <i className="fas fa-user-circle"></i>
         <div className="input">
-        <input className="email-login" placeholder="email" value={email} onChange={e => setEmail(e.target.value)} />
+          <input className="email-login" placeholder="email" value={email} onChange={e => setEmail(e.target.value)} />
         </div>
         <div className="input">
-        <input className="senha-login" placeholder="senha" type="password" value={senha} onChange={e => setSenha(e.target.value)} />
+          <input className="senha-login" placeholder="senha" type="password" value={senha} onChange={e => setSenha(e.target.value)} />
         </div>
         <button className="btn-login" type="button" onClick={() => logar()}>ENTRAR</button>
       </form>
-    
+
     </div>
   )
 

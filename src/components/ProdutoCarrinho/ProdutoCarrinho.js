@@ -26,7 +26,7 @@ function ProdutoCarrinho(props) {
 
   const removerDoCarrinho = () => {
     let prodCarrinho = [];
-    prodCarrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+    prodCarrinho = JSON.parse(sessionStorage.getItem("carrinho")) || [];
 
     // console.log(prodCarrinho)
     for (let index = 0; index < prodCarrinho.length; index++) {
@@ -35,9 +35,9 @@ function ProdutoCarrinho(props) {
       }
     };
 
-    localStorage.setItem("carrinho", JSON.stringify(prodCarrinho));
+    sessionStorage.setItem("carrinho", JSON.stringify(prodCarrinho));
 
-    let lista = JSON.parse(localStorage.getItem("carrinho"));
+    let lista = JSON.parse(sessionStorage.getItem("carrinho"));
     // console.log(lista)
     window.location.reload()
   }

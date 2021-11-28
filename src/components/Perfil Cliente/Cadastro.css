@@ -1,0 +1,88 @@
+* {
+  font-weight: bold;
+  color: #454aa8;
+}
+
+.posicao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.usuario-cadastro {
+  height: 300px;
+}
+
+.usuario-compras {
+  min-height: 250px;
+}
+
+.usuario-cadastro, .usuario-compras {
+  margin-top: 20px;
+  background: rgba(133, 138, 227, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  max-width: 840px;
+}
+
+.valor-status, .usuario-cadastro-dado, .usuario-cadastro-pedidos, .data-pedido {
+  background: rgba(133, 138, 227, 0.95);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 5px;
+  width: 80%;
+}
+
+.valor-status, .dados, .data-pedido {
+  text-align: center;
+  align-items: center;
+}
+
+.direction {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 80%;
+  min-height: 50px;
+  align-items: center;
+}
+
+.usuario-cadastro-pedidos {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  justify-content: space-between;
+}
+
+.pedido-qtd {
+  width: 10%;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+}
+
+.pedido-prod-nome {
+  width: 70%;
+  white-space: nowrap;
+}
+
+.pedido-direction {
+  display: flex;
+  flex-direction: row;
+}
+
+  @media screen and (max-width: 567px) {
+    .unidade {
+      display: none;
+    }
+  }
