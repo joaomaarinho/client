@@ -14,8 +14,9 @@ input, select {
   color: #5C64EB;
 }
 
-.h1, h2 {
+h1, h2 {
   margin-top: 20px;
+  text-align: center;
 }
 
 .h1, h2 {
