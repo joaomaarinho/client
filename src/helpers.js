@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API = 'http://localhost:3005/';
+const API = `${process.env.REACT_APP_URL_PAYMENT}`;
 
 export async function fetchFromAPI(endpoint, opts) {
   const { method, body } = { method: 'POST', body: null, ...opts };
