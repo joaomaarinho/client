@@ -38,7 +38,7 @@ function Success({ history }) {
   if (isLoading) {
     return (
       <div className="processando">
-        <h1>PROCESSANDO PAGAENTO, AGUARDE...</h1>
+        <h1>PROCESSANDO PAGAMENTO, AGUARDE...</h1>
         <CircularProgress size={100} />
       </div>
     )
